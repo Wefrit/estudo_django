@@ -1,10 +1,10 @@
 from django.shortcuts import render
-
+from blog.data import posts
 
 def blog (request):
     context = {
         'text': 'Olá Blog',
-        'title': 'Pagina do blog ',
+        'posts': posts,
     }
     return render(request,
                 'blog/index.html',
@@ -14,7 +14,6 @@ def blog (request):
 def exemplo(request):
     context={
             'text':'Olá exemplo',
-            'title': 'Pagina do exemplo '
             }
     return render(request,
                 'blog/exemplo.html',
