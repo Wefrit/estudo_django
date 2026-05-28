@@ -10,6 +10,15 @@ def blog (request):
                 'blog/index.html',
                 context,
     )
+def post (request, id):
+    context = {
+        # 'text': 'Olá Blog',
+        'posts': posts,
+    }
+    return render(request,
+                'blog/index.html',
+                context,
+    )
 
 def exemplo(request):
     context={
