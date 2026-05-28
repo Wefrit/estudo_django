@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def blog (request):
     context = {
-        'text': ' Olá Blog',
+        'text': 'Olá Blog',
         'title': 'Pagina do blog ',
     }
     return render(request,

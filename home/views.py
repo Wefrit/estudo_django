@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def home(request):
     context={
-        'text':'Estamos na home2',
+        'text':'Olá Home',
         }
     return render(request,
                 template_name='home/index.html',
